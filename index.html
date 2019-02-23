@@ -13,24 +13,52 @@
   gtag('config', 'UA-134909569-1');
 </script>
   <style>
+  body{
+    margin:0px;
+    }
+
     a {
-      color: black;
+      color:black;
       text-decoration: none;
     }
+
     h1{
       font-size: 50px;
       text-align: center;
+
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+
+    #grid{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        border-bottom: solid gray 1px;
+        text-align: center;
+    }
+    #grid ul{
+      border-right:1px solid gray;
+      width:150px;
+      margin:0px;
+      padding:20px;
+      padding-left: 35px
+
+    }
+    #grid #article{
+      padding-left: 25px;
     }
   </style>
 
   </head>
   <body>
-    <h1><a href="index.html" style="color:blue; text-decoration:underline"> Travey's local play!</a></h1>
-      <ul>
-        <li><a href="1.html">나만의 로컬 플레이</a></li>
-        <li><a href="2.html">로컬 플레이 카페</a></li>
-        <li><a href="3.html">로컬 플레이 맛집</a></li>
-      </ul>
+    <h1><a href="index.html" style=" text-decoration:underline"> Travey's local play!</a></h1>
+    <div id="grid">
+        <ul>
+          <li><a href="1.html">나만의 로컬 플레이</a></li>
+          <li><a href="2.html">로컬 플레이 카페</a></li>
+          <li><a href="3.html">로컬 플레이 맛집</a></li>
+        </ul>
 <!--
       <h1><a href="index.html"><font color="red">  Travey local play!</font></a></h1>
         <ul>
@@ -39,15 +67,18 @@
           <li><a href="3.html"><font color="red"> 로컬 플레이 맛집</font></a></li>
         </ul>
     -->
-    <h2>Travely의 로컬 플레이</h2>
-    <p>Travely의 로컬 플레이로 어디를 가나 로컬처럼 여행하세요!
-    </p>
-    <img src="travel1.jpg" width="450px">
+    <div id="article">
+        <h2>Travely의 로컬 플레이</h2>
+        <p>Travely의 로컬 플레이로 어디를 가나 로컬처럼 여행하세요!
+        </p>
+        <img src="travel1.jpg" width="450px">
 
-    <p>Travely가 무슨 일은 하는지 궁금하신가요??
-       <a href="http://blog.naver.com/waraker" target="_blank" title="Travely">
-         여기</a>를 눌러주세요!
-    </p>
+        <p>Travely가 무슨 일은 하는지 궁금하신가요??
+           <a href="http://blog.naver.com/waraker" target="_blank" title="Travely">
+             여기</a>를 눌러주세요!
+        </p>
+    </div>
+    </div>
 
     <p><div id="disqus_thread"></div>
     <script>
